@@ -13,7 +13,7 @@ Synopsis:            Console-based Role Playing Game
 Build-Type:          Simple
 tested-with:         GHC==7.0.2
 data-files:          README.txt, WHATSNEW.txt, TODO.txt
-cabal-version:       >= 1.2
+cabal-version:       >= 1.6
 
 Executable mazesofmonad
   Main-is:             Main.hs
