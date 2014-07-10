@@ -1,0 +1,5 @@
+
+- npcs can use magic?
+
+- when trading, show which items are better than what we have in hands or on body? Maybe this is too much information...
+

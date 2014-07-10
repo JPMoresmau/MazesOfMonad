@@ -1,0 +1,45 @@
+1.0.5:
+	Feature: Traps in maze (can be detected) (only in new mazes created with 1.0.5 version)
+		-> when level of character improve, more traps are present
+	Fix: number of items went up instead of down as level went up
+	Fix: Dexterity roll to use shield was easier instead of harder when attacker hit better
+	Fix: Spells to yourself lasted forever instead of expiring
+	Internal: gather statistics on games, tune some difficulty settings
+	Fix: escaping caused wrong map output (some corridors marked as walls)
+	Internal: attacking a NPC first causes its attitude to worsen and become hostile, even if he was friendly at first
+	
+1.0.4:
+	Feature: Mind Potions can restore mental points (only in new mazes created with 1.0.4 version)
+	UI: When meeting and fighting a NPC, you see its attitude and status (physical and mental)
+	Internal: Attitude of NPCs is worse as your character improves
+	Internal: More chances to have exceptional failure or success (1 in 20 of each, as with normal d20 rules)
+	Feature: NPCs can decide to escape, offer you gold or pray for mercy if the fight takes a bad turn for them
+	Internal: Data is now stored in getAppUserDataDirectory "MazesOfMonad" instead of getAppUserDataDirectory "RPG". Copy your data over!
+	Feature: Characters and NPCs get back mental/physical points when times go (depending on balance/constitution)
+	
+1.0.3:
+	Fix: picking up a two-handed weapon when you had a different weapon in each hand caused the disappearance of one of the two weapons
+	Internal: use a Writer monad to manage messages
+	UI: you now see a message when a characteristic is raised due to experience
+	Internal: fumble can cause different effects than self wound: 
+		melee fumble:
+			self wound
+			weapon breaks
+			bad scar causes charisma loss
+			hand wound cause dexterity loss 
+		magic fumble:
+			mental health can go down
+			spell can affect player
+			spell can be forgotten
+			intelligence can go down
+			
+1.0.2:
+	Fix: when a monster yielding a two-handed weapon was killed, two instances of the weapon were dropped
+		Thanks to Christopher Skrzętnicki
+
+1.0.1:
+	Fix issue on Y/N question (crash on hitting enter directly, now uses default value correctly)
+		Thanks to Justin Bailey
+	
+1.0:
+	Initial release
