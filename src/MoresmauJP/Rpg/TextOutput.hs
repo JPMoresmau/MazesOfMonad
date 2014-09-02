@@ -108,7 +108,7 @@ ppTradeOperation' = render . ppTradeOperation
 
 ppAttitude :: NPCCharacter -> String
 ppAttitude (NPCCharacter{npcAttitude=a}) 
-	| a<5="very vostile"
+	| a<5="very hostile"
 	| a<9="hostile"
 	| a<13="neutral"
 	| a<17="friendly"

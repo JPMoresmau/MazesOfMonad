@@ -334,7 +334,7 @@ choiceArena :: WScreenT Arena
 choiceArena = do
 	ar<-gets gsData
 	let status=getHealthSummary (arenaCharacter ar)
-	let statusOpp=printf "You're fighting a %s." (ppNPC (arenaOpponent ar))
+	let statusOpp=printf "You're fighting %s." (ppNPC (arenaOpponent ar))
 	let actions=getPossibleArenaActions (arenaCharacter ar) (arenaOpponent ar)
 	return (getShowCombo (["Your health:"]++status++[statusOpp]++["Choose next action"]) actions choiceArenaF)
 
