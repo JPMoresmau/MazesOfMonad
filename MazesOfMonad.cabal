@@ -11,7 +11,7 @@ Category:            Game
 Maintainer:          jpmoresmau@gmail.com
 Synopsis:            Console-based Role Playing Game
 Build-Type:          Simple
-tested-with:         GHC==7.0.2
+tested-with:         GHC==8.4.3
 data-files:          README.txt, WHATSNEW.txt, TODO.txt
 cabal-version:       >= 1.6
 

@@ -16,7 +16,6 @@ import MoresmauJP.Rpg.MazeObjects
 import System.Directory
 import System.FilePath
 import System.IO
-import System.Locale
 
 import Text.Printf
 import System.IO.Error (catchIOError)
